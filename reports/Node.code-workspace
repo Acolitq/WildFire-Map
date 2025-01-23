@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../Node"
+		},
+		{
+			"path": "../../../School/ESC190 Tutorials"
+		},
+		{
+			"path": "../../../Bum Ass Hackathon Project"
+		},
+		{
+			"path": "../../../Django"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "type shit"
+	}
+}

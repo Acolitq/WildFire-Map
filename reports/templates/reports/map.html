@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fire Report Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        #map {
+            height: 80vh;
+        }
+
+        #report-form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Fire Report Map</h1>
+    <div id="map"></div>
+
+    <form id="fire-report-form">
+        <label for="latitude">Latitude:</label>
+        <input type="number" step="any" id="latitude" name="latitude" required>
+
+        <label for="longitude">Longitude:</label>
+        <input type="number" step="any" id="longitude" name="longitude" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <button type="submit">Submit Report</button>
+    </form>
+
+    <script src="{% static 'js/map.js' %}"></script>
+</body>
+</html>
